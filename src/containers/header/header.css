@@ -1,0 +1,156 @@
+.header{
+    display: flex;
+}
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* color: aqua; */
+    margin-right: 5rem;
+}
+.content h1{
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: 0.1em;
+}
+.content p{
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+    margin-top: 1.5rem;
+}
+.input{
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+
+}
+.input input{
+    flex: 2;
+    /* width: 100%; */
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    color: #fff;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+.input button{
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: #FF4820;
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.people{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+.people p{
+    margin: 0 0 0 1rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: #fff;
+    text-align: center;
+}
+.header-image{
+    /* flex: 0.5; */
+    display: flex;
+    width: 15vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2rem;
+}
+.header-image img{
+    height: 45vh;
+    width: 20vw;
+}
+@media screen and (max-width:1050px){
+    .header{
+        flex-direction: column;
+    }
+    .content{
+        margin: 0 0 3rem;
+    }
+    .header-image img{
+        height: 20vh;
+        width: 25vw;
+    }
+    .header-image{
+        margin: auto;
+    }
+}
+@media screen and (max-width:650px){
+    .content h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .content{
+        margin: 0 0 3rem;
+    }
+    .people{
+        flex-direction: column;
+    }
+    .people p{
+        margin: 0;
+    }
+    .input input,.input button{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .header-image{
+        margin: auto;
+    }
+    .header-image img{
+        height: 20vh;
+        width: 25vw;
+    }
+}
+@media screen and (max-width:490px){
+    .content h1{
+        font-size: 30px;
+        line-height: 48px;
+    }
+    .content p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .input input,.input button{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .header-image img{
+        height: 20vh;
+        width: 25vw;
+    }
+    .header-image{
+        margin: auto;
+    }
+}
